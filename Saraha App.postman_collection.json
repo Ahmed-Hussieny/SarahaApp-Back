@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "708c3bc3-145f-494b-8c5c-b76868d599ee",
+		"name": "Saraha App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29776500"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"Ahmed3\",\n    \"email\":\"ahmed3@gmail.com\",\n    \"password\":\"A0553403755dc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/SignUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"SignUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"username\":\"Ahmed1\",\n    \"email\":\"ahmed1@gmail.com\",\n    \"password\":\"A0553403755dc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/SignIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"SignIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"username\":\"Ahmed11\"\n    \"email\":\"ahmed11@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/updateUser?loggedInId=67460fc581563b2d77f0f2d1&id=67460fc581563b2d77f0f2d1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"updateUser"
+							],
+							"query": [
+								{
+									"key": "loggedInId",
+									"value": "67460fc581563b2d77f0f2d1"
+								},
+								{
+									"key": "id",
+									"value": "67460fc581563b2d77f0f2d1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"Ahmed11\"\n    // \"email\":\"ahmed11@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/deleteUser?loggedInId=67460fc581563b2d77f0f2d1&_id=67460fc581563b2d77f0f2d1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"deleteUser"
+							],
+							"query": [
+								{
+									"key": "loggedInId",
+									"value": "67460fc581563b2d77f0f2d1"
+								},
+								{
+									"key": "_id",
+									"value": "67460fc581563b2d77f0f2d1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/getUserById?id=67460fd281563b2d77f0f2d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"getUserById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "67460fd281563b2d77f0f2d5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "Add Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\":\"message 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/message/addMessage?sendTo=67460fd281563b2d77f0f2d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"addMessage"
+							],
+							"query": [
+								{
+									"key": "sendTo",
+									"value": "67460fd281563b2d77f0f2d5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Message",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/message/deleteMessage?loggedInUserId=67460fd281563b2d77f0f2d5&messageId=674639ce0decf020a55a8169",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"deleteMessage"
+							],
+							"query": [
+								{
+									"key": "loggedInUserId",
+									"value": "67460fd281563b2d77f0f2d5"
+								},
+								{
+									"key": "messageId",
+									"value": "674639ce0decf020a55a8169"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mark Message As Viewed",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/message/markMessageAsViewed?loggedInUserId=67460fd281563b2d77f0f2d5&messageId=674639eb0decf020a55a816d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"markMessageAsViewed"
+							],
+							"query": [
+								{
+									"key": "loggedInUserId",
+									"value": "67460fd281563b2d77f0f2d5"
+								},
+								{
+									"key": "messageId",
+									"value": "674639eb0decf020a55a816d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Messages For User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/message/getMessagesForUser?loggedInUserId=67460fd281563b2d77f0f2d5&isViewed=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"getMessagesForUser"
+							],
+							"query": [
+								{
+									"key": "loggedInUserId",
+									"value": "67460fd281563b2d77f0f2d5"
+								},
+								{
+									"key": "isViewed",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "it's a clone for Saraha App"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+// hashing concept
+//  node bcrypt.js can be used outside nodejs but bcrypt used only in nodejs
+//     const hashedPassword = bcrypt.hashSync(password, 10);  8  to 12  salt rounds
+//     const hashedPassword = await bcrypt.hash(password, 10);
+// sign in
+// const isPasswordMatch = bcrypt.compareSync(password, user.password);
+// compareSync make hash to the first parameter
+
+. http status code
+    1xx - information
+    2xx - success
+    3xx - redirect
+    4xx - client error
+    5xx - server error
+
+    200 - ok
+    201 - created
+    204 - no content
+
+    304 - not modified
+    
+    400 - bad request
+    401 - unauthorized
+    403 - forbidden
+    404 - not found
+
+    500 - internal server error
+    502 - bad gateway
+
+
+
+// error handling
+// try catch block
+// error handling middleware ( expressAsyncHandler)
